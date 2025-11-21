@@ -233,7 +233,12 @@ body {
 }
 
     </style>
-​
+​  <script>
+    
+  document.querySelectorAll(".price-btn").forEach(b =>
+  b.onclick = () => document.getElementById("priceValue").textContent = "$" + b.dataset.price
+  );
+  </script>
 ​
   </head>
 ​
