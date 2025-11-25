@@ -9,13 +9,13 @@
     <style>
 
 
-body {
+body { /*this is for the background and site in general*/
   background-color:#f0dfc8;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-.navbar {
+.navbar { /*this is for the top nav bar, i used justify-content to properly space the buttons*/
   background-color:#303030;
   color:#f0dfc8;
   display:flex;
@@ -28,18 +28,18 @@ body {
 }
 
 
-.navbar a {
+.navbar a { /*i used this so the links would not be underlined*/
   text-decoration: none;
 }
 
 
-.logo {
+.logo { /* this is so the logo can have a different look than the other texts, i used the google font "Imperial script" here*/
   font-family:"Imperial Script", cursive;
   font-size: 45px;
   color: #f0dfc8;
 }
 
-.nav-btn {
+.nav-btn { /* this is so you can distinguish the nav button from the logo and it looks better in my opinion, i used a border around the text to make a box */
   background-color:#5d3f4d;
   border:none;
   padding:8px 18px;
@@ -49,7 +49,7 @@ body {
   font-size:15px;
 }
 
-.nav-btn:hover {
+.nav-btn:hover { /* this is so when you hover on the buttons it becomes slightly darker*/
   filter: brightness(0.85);
 }
 
@@ -57,7 +57,7 @@ body {
   filter: brightness(0.85);
 }
 
-.imgthing {
+.imgthing { /*imgthing is used for the first text with an image as the background when you first open up the page i used tools such as display, justify content and align items to make the box look like how it is*/
   width: 100%;
   height: 450px;
   background-image: url("https://cdn0.weddingwire.ca/vendor/1561/3_2/960/jpg/all-display_50_71561-169593809362646.jpeg");
@@ -70,95 +70,95 @@ body {
   text-align: center;
 }
 
-.imgthing-text {
+.imgthing-text { /* this is for all the text in the box */
   color: #000000;
   padding: 20px;
 
 }
 
-.imgthing-text h1 {
+.imgthing-text h1 { /* this is used for the first text in the box*/
   margin: 0;
   font-size: 45px;
   letter-spacing: 3px;
   font-weight: 700;
 }
 
-  .imgthing-text p {
+  .imgthing-text p { /* this is used for the last piece of text in the box */
     margin-top: 10px;
     font-size: 15px;
   }
 
 
 
-.first {
+.first { /* this was the big container for the first section of the website, including the image, title and text, flex was used to easily reorganize the things inside of it*/
   display:flex;
   align-items:center;
   gap:25px;
   padding:40px;
 }
 
-.first-text h2 {
+.first-text h2 { /*this was for the title block*/
   font-size:40px;
   margin:0;
 }
 
-.first-text p {
+.first-text p { /* this was for the first text block, i used max-width:600px so the box its constrained in would not get larger than 600px*/
   font-size:16px;
   max-width:600px;
 }
 
-.first-img {
+.first-img { /*this image sits right next to the text, i used border-radius to round out the edges of the image*/
   height:500px;
   width:500px;
   border-radius: 60px;
 }
 
-.second{
+.second{ /*this is the large container for the second section of the page*/
   gap:25px;
   padding:40px;
 }
 
-.second-text h2 {
+.second-text h2 { /*this is for the title of the second section, margin 0 was used so it sits flush with all other elements*/
   font-size:40px;
   margin:0;
 }
 
-.second-text p {
+.second-text p { /*this is for the body text of the second section*/
   font-size:20px;
 }
 
-.third {
+.third { /* this is the large container for the third part of the website */
   display: flex;
   align-items: center;
   gap: 25px;
   padding: 40px;
 }
 
-.third-text p {
+.third-text p { /* third text was a large container i used with things such as buttons and this p tag inside of it, this p tag used max-width so it wouldnt get too long */
   font-size: 16px;
   max-width: 400px;
 }
 
-.third-text h2 {
+.third-text h2 { /*this was for the title of the third text, the margin is used so it sits flush with the p text*/
   font-size: 40px;
   margin: 0;
 }
 
-.price-title {
+.price-title { /*this is for the part of the third section that says prices in large letters, margin-top is used so its not right next to the p tag */
   margin-top: 25px;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
-.price-buttons {
+.price-buttons { /* this is the div class for all four buttons and i used gap: 15px; as it adds 15 pixels of space between each button */
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
   margin-top: 10px;
 }
 
-.price-btn {
+.price-btn { /* this is for each button, i used the transitiojn feature so when :hover gets used the transition takes some time to play through, cursor:pointer; makes it so the hand appears when hovering the buttons */
   padding: 12px 22px;
   background: #8a5a37;
   color: white;
@@ -170,18 +170,18 @@ body {
   transition: 1s;
 }
 
-.price-btn:hover {
+.price-btn:hover { /* this creates an effect of enlargement and darkness when you are hovering over the buttons*/
   filter: brightness(0.85);
   transform: scale(1.05);
 }
 
-.price-display {
+.price-display { /* this is for the part that says price:$10*/
   font-size: 20px;
   margin-top: 15px;
   font-weight: bold;
 }
 
-.view-more {
+.view-more { /* this is for the part of the third section that has a button saying "View more" i used padding: 12px 28px; as it adds space inside the element, 12px top/bottom, 28px left/right*/
   display: inline-block;
   margin-top: 25px;
   padding: 12px 28px;
@@ -193,12 +193,12 @@ body {
   transition: 1s;
 }
 
-.view-more:hover {
+.view-more:hover { /*this creates the same effect as the other buttons */
   filter: brightness(0.85);
   transform: scale(1.05);
 }
 
-.contact-section {
+.contact-section {  /* uses flex to place the left and right parts on the same line.*/
   background-color: #5d3f4d;
   color: #f0dfc8;
   display: flex;
@@ -209,7 +209,7 @@ body {
 
 .contact-left h2 {
   font-size: 22px;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px 0; /*this creates space beneath the text */
   letter-spacing: 1px;
 }
 
@@ -218,11 +218,11 @@ body {
   font-size: 14px;
 }
 
-.contact-right {
+.contact-right { /*this is for the text on the right side of the contact section*/
   text-align: right;
 }
 
-.contact-right h2 {
+.contact-right h2 { 
   font-size: 32px;
   margin: 0;
   letter-spacing: 2px;
@@ -230,20 +230,14 @@ body {
 }
 
 .contact-right p {
-  margin: 5px 0 0 0;
+  margin: 5px 0 0 0; /*removes outside spacing of the text*/
   font-size: 14px;
   letter-spacing: 1px;
 }
 
     </style>
-​  <script>
-    
-  document.querySelectorAll(".price-btn").forEach(b =>
-  b.onclick = () => document.getElementById("priceValue").textContent = "$" + b.dataset.price
-  );
-  </script>
-​
-<link rel="preconnect" href="https://fonts.googleapis.com">
+​/*this section is for the custom font i used*/
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap" rel="stylesheet">
 
@@ -302,13 +296,13 @@ body {
     <h3 class="price-title">PRICES</h3>
 
     <div class="price-buttons">
-      <button class="price-btn" data-price="10">Box of 6</button>
-      <button class="price-btn" data-price="16">Box of 9</button>
-      <button class="price-btn" data-price="22">Box of 16</button>
-      <button class="price-btn" data-price="28">Box of 25</button>
+      <button class="price-btn">Box of 6</button>
+      <button class="price-btn">Box of 9</button>
+      <button class="price-btn">Box of 16</button>
+      <button class="price-btn">Box of 25</button>
     </div>
 
-    <p class="price-display">Price: <span id="priceValue">$10</span></p>
+    <p class="price-display">Price: $10 </p>
 
     <a href="Menu.html" class="view-more">VIEW MORE</a>
 
