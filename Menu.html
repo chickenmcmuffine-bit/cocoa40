@@ -95,14 +95,14 @@ body { /* body, navbar and contact section is the same in all pages, i go in dep
 }
 
 
-.grid {
+.grid { /* the grid is used to contain all 6 of the "cards" used, i use the grid-template-columns: repeat(3, 1fr) as it allows space for 3 cards per line and they are equally spaced using one fractional unit(fr) */
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
   padding: 40px;
 }
 
-.card {
+.card { /* this is the large container for all the "cards" on the page, i used the border: 2px solid #5d3f4d; as it adds a 2px dark border around the card */
   background: #fff4e6;
   border: 2px solid #5d3f4d; 
   border-radius: 12px;
@@ -111,12 +111,12 @@ body { /* body, navbar and contact section is the same in all pages, i go in dep
   transition: 0.2s;
 }
 
-.card:hover {
+.card:hover { /*this is so when the card is hovered it goes up a bit using transform and it creates a small shadow creating a levitating effect i found cool */
   transform: translateY(-5px);
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.card img {
+.card img { /*this is for the image of the card, i used object-fit: cover; as it makes the image fill the space without cropping it */
   width: 100%;
   height: 180px;
   object-fit: cover;
@@ -124,19 +124,20 @@ body { /* body, navbar and contact section is the same in all pages, i go in dep
   margin-bottom: 12px;
 }
 
-.sale {
+.sale { /* i used this for the text saying the price, i used font-size: 0.9rem; to make the font size slightly smaller than it needs to be, without the need of counting pixels*/
   font-size: 0.9rem;
   color: #5d3f4d;
   margin: 3px 0;
 }
 
-.card h3 {
+.card h3 { /* this is for the text where it says the name of the item i used margin: 10px 0 20px; as it adds space above 10px and below 20px*/
+        
   font-size: 1.05rem;
   margin: 10px 0 20px;
   color: #303030;
 }
 
-.buy-btn {
+.buy-btn { /* this is for the buy now button underneath the text i used functions such as border: none; and border-radius as it Rounds the corners a lot and removes the default border. */
   width: 100%;
   padding: 12px;
   border-radius: 25px;
@@ -148,7 +149,7 @@ body { /* body, navbar and contact section is the same in all pages, i go in dep
   font-size: 15px;
 }
 
-.buy-btn:hover {
+.buy-btn:hover { /* this is so when you hover over the buy button it turns a little darker*/
   filter: brightness(0.85);
 
     </style>
